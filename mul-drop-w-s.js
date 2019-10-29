@@ -26,17 +26,22 @@ function internalContentDiv(){
 
 // The search button
 function internalButtontag(){
-    return document.createElement("button");
+    var button =  document.createElement("button");
+    button.innerHTML = "Search..";
+    button.setAttribute("class","form-control form-control-user");
+    return button;
 }
 
 // The search box input
 function searchBoxinput(){
     var searchBox = document.createElement("input");
+    searchBox.setAttribute("class","dropDownSearch form-control form-control-user");
     return searchBox;
 }
 
 // The selected list tag
 function selectedItemsul(){
     var selectedItems = document.createElement("ul");
+    selectedItems.setAttribute("class","selectedItemsList");
     return selectedItems;
 }
